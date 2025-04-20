@@ -67,7 +67,8 @@ setup(
 		'rich',
 
 		'usb-construct<1.0',
-		'torii>=0.5',
+		# 0.7.1 raises ValueError: Empty Case() clauses have been superseded by Default()
+		'torii==0.5.0',
 	],
 
 	extras_require = {
