@@ -193,7 +193,7 @@ class USBDevice(Elaboratable):
 		m = Module()
 
 		# If we have a bus translator, include it in our submodules.
-		if self.translator:
+		if True or self.translator:  # this check raises AssertionError
 			m.submodules.translator = self.translator
 
 
